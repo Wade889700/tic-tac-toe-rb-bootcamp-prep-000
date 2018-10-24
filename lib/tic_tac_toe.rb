@@ -106,7 +106,8 @@ end
 def winner(board)
   if won?(board)
     #define the v
-    a = won?[board]
+    a = won?[board][0]
+    
     #access the board array
   end
 end
