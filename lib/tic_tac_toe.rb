@@ -105,7 +105,9 @@ end
 
 def winner(board)
   if won?(board)
-    
+    #define the variable 
+    a = win_combination
+    #access the board array
   end
 end
 
