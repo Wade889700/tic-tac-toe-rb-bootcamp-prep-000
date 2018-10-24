@@ -107,13 +107,13 @@ def winner(board)
     return nil
   else WIN_COMBINATIONS.each do |winner_counter|
       if winner_counter.all? {|idx| board[idx] == "X"}
-        winner = "X"
+        return winner = "X"
       elsif winner_counter.all? {|idx| board[idx] == "O"}
-        winner = "O"
+        return winner = "O"
       else
       end
     end
-  return winner
+  end
 end
 
 
