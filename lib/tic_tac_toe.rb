@@ -108,7 +108,7 @@ def winner(board)
     #define the v
     a = won?(board)[0]
     #access the board array
-    pry 
+    board[a]
   end
 end
 
