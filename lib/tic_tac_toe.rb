@@ -105,7 +105,7 @@ def winner(board)
     #define the variable
     a = won?(board)[0]
     #access the board array
-    board[a]
+    return board[a]
   end
 end
 
