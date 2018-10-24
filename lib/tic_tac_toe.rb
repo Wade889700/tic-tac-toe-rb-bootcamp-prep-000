@@ -102,22 +102,23 @@ def over?(board)
   end
 end
 
-def check_win_combination?(board, player, win_combo)
+def winner_checking_system(board,character,win_combo)
   win_combo.all? do |position|
-    board[position] == player
+    board[position]==player
   end
 end
+
 def winner(board)
-  if !won?(board)
-    return nil
-  else WIN_COMBINATIONS.each do |win_combo|
-    if check_win_combination?(board, 'X', win_combo)
-      return 'X'
-    elsif check_win_combination?(board, 'O', win_combo)
-      return 'O'
+  winner = nil
+    WIN_COMBINATIONS.each do |win_combo|
+      if winner_checking_system(board,"X",win_combo)
+        return winner = "X"
+      elsif winner_checking_system(board,"O",win_combo)
+        return winner = "O"
+      else
+      end
     end
-  end
-end
+  return winner
 end
 
 
