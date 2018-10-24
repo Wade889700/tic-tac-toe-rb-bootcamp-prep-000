@@ -110,11 +110,11 @@ end
 
 def winner(board)
   winner = nil
-    WIN_COMBINATIONS.each do |winner_counter|
-      if winner_counter.all? {|idx| board[idx] == "X"}
-        winner = "X"
-      elsif winner_counter.all? {|idx| board[idx] == "O"}
-        winner = "O"
+    WIN_COMBINATIONS.each do |win_combo|
+      if winner_checking_system(board,"X",win_combo)
+        return winner = "X"
+      elsif winner_checking_system(board,"O",win_combo)
+        return winner = "O"
       else
       end
     end
