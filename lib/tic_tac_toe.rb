@@ -110,6 +110,7 @@ def winner(board)
       elsif winner_counter.all? {|idx| board[idx] == "O"}
         winner = "O"
       else
+        winner = nil
       end
     end
   return winner
