@@ -102,6 +102,7 @@ def over?(board)
   end
 end
 
+def winner_checking_system(board,index,)
 
 def winner(board)
   winner = nil
