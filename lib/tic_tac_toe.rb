@@ -104,16 +104,8 @@ def over?(board)
 end
 
 def winner(board)
-  if !won?(board)
-    return nil
-  else WIN_COMBINATIONS.each do |winner_counter|
-      if winner_counter.all? {|idx| board[idx] == "X"}
-        return winner = "X"
-      elsif winner_counter.all? {|idx| board[idx] == "O"}
-        return winner = "O"
-      else
-      end
-    end
+  if won?(board)
+    binding.pry
   end
 end
 
