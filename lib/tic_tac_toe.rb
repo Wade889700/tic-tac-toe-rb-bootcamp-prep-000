@@ -102,7 +102,10 @@ def over?(board)
   end
 end
 
-def winner_checking_system(board,index,)
+def winner_checking_system(board,character,win_combo)
+  win_combo.all? do |position|
+    
+end
 
 def winner(board)
   winner = nil
