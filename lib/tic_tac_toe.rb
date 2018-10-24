@@ -103,7 +103,7 @@ def over?(board)
   end
 end
 
-def winner()
+def winner
   if won?(board)
     #define the v
     a = won?(board)[0]
