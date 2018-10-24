@@ -104,7 +104,7 @@ end
 
 def winner_checking_system(board,character,win_combo)
   win_combo.all? do |position|
-    
+    board[position]==player
 end
 
 def winner(board)
